@@ -1,0 +1,264 @@
+:root{
+    --white:#FFFFFE;
+    --light-gray:#EFF0F3;
+    --ligth-gray-2:#E4E5E9;
+    --gray:#C0C0C0;
+    --dark-gray:#9A9494;
+    --black:#2B2C34;
+    --blue:#6246EA;
+    --orange:#ff745c;
+}
+button{
+    border: none;
+    padding:1rem 1.5rem ;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+input{
+    width: 25rem;
+    height: 2.8rem;
+    border: none;
+    border-radius: .3rem;
+    outline: 2px solid var(--dark-gray);
+    padding: .3rem .5rem;
+}
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.app{
+    padding:2rem 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+sub{
+    color: var(--orange);
+}
+.header{
+    padding-block: 0 2rem;
+}
+.header,
+.menu,
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu,
+.links{
+    gap: 3rem;
+}
+.menu p:hover{
+    color: var(--orange);
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 2rem 4rem;
+}
+.blogImg{
+    width: 28rem;
+    height: 21rem;
+    
+}
+.blogImg img{
+    width: 100%;
+    height: 100%;
+}
+.homeLeft h1{
+    font-size: 1.8rem;
+    padding-block: 1rem;
+    color: var(--black);
+}
+.newLook{
+    border-left: 2px solid var(--black);
+    padding-left: 1rem;
+    line-height: 1.6rem;
+    color: var(--gray);
+}
+.info{
+    display: flex;
+    gap: 2rem;
+    padding-block: 1.5rem;
+}
+.superfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.supImg{
+    width: 6rem;
+    height: 6rem;
+}
+.supImg img{
+    width: 100%;
+    height: 100%;
+}
+.newSuper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.supContent h1{
+    font-size: 2.3rem;
+    padding-block: .7rem;
+}
+.supContent{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.supContent p{
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    align-items: start;
+}
+.links ul li:first-child{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.links ul li{
+    line-height: 2.2rem;
+    text-align: center;
+}
+.modelBox{
+    margin-block: 2rem;
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    max-width: 25rem;
+    padding-block:0 1rem;
+    box-shadow: 1px 2px 2px var(--dark-gray),
+                0px 0px 2px var(--dark-gray);
+}
+.modelImage{
+    width: 25rem;
+    height: 15rem;
+}
+.model-low{
+    display: flex;
+    padding: .5rem 2rem;
+    gap: .9rem;
+    align-items: end;
+    justify-content: space-between;
+}
+.modelImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+}
+.lowImg{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.lowImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    outline: 1px solid var(--orange);
+}
+.modelHome{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.modelBox h1{
+    color: var(--orange);
+    text-align: center; 
+    padding:.9rem .8rem 0;
+}
+.author{
+    color: var(--dark-gray);
+}
+.author p:first-child{
+    color: black;
+    font-weight: 900;
+}
+.time-read{
+    color: var(--gray);
+}
+
+@media (max-width: 640px) {
+   .app{
+    padding: 1rem 2rem;
+   }
+   .header h1{
+    padding-block: 1rem 0;
+    font-size: 1.2rem;
+   }
+   .modelHome{
+    align-items: center;
+   }
+   .menu{
+    display: none;
+   }
+   .home{
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+   }
+   .modelBox{
+    width: 18rem;
+   }
+   .modelImage{
+    width: 18rem;
+   }
+   .footer{
+    flex-direction: column;
+   }
+   .superfooter{
+    width: 100%;
+   }
+   .links{
+    padding-block: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .info{
+    padding: 0;
+    flex-direction: column;
+   }
+   .info input{
+   margin-block: 1rem 0;
+    width: 18rem;
+   }
+   .blogImg{
+    display: none;
+    width: 18rem;
+   }
+   .model-low{
+    padding-inline: 1rem;
+    justify-content: space-evenly;
+    font-size: .85rem;
+   }
+   .lowImg{
+    width: 2.5rem;
+    height: 2.5rem;
+   }
+}

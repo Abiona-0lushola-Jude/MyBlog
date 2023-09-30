@@ -1,0 +1,1 @@
+GET https://newsapi.org/v2/everything?q=tesla&from=2023-08-27&sortBy=publishedAt&apiKey=95188e36747b427aa3eabd46b519800a
