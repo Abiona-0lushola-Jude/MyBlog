@@ -9,12 +9,11 @@ function Models({newData}) {
   return (
     <section className='modelBox'>
       <Link 
-      href={newData.url}
+      href={`MyBlog/${newData.source.name}`}
       target='_blank'
-      
       >
         <div className='modelImage'>
-          <Image className='img' src={newData.urlToImage ? newData.urlToImage : blogImg} alt='' title='' width={900} height={900}/>
+          <Image className='img' src={newData.urlToImage ? newData.urlToImage : blogImg} alt={newData.title} title={newData.title} width={900} height={900}/>
         </div>
         <h1>{newData.title}</h1>
         <div className='model-low'>

@@ -50,6 +50,9 @@ sub{
     justify-content: space-between;
     align-items: center;
 }
+.header h1{
+    color: var(--black);
+}
 .menu p{
     font-size: 1.2rem;
     font-weight: bold;
